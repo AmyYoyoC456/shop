@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Buy whatever you want🤩
+    Sorry if the design is bad, I wasn't able to deal with the CSS😅
+     Btw just a game, won't acsully take your money😉">
+     <meta name="author" content="Amy Qu">
+    <title>Shop</title>
+    <style>
+        body{
+            background-color: lightsalmon;
+        }
+        hr{
+            border:2px dashed coral;
+        }
+        h1,h2{
+            text-align: center;
+            color: brown;
+        }
+        button,p{
+            font-size: medium;
+            background-color: indianred;
+            color: beige;
+            border-radius: 50px;
+        }
+        img{
+            width: 300px;
+            border-radius: 20px;
+        }
+        section,div{
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color: lightyellow;
+        }
+    </style>
+    <script>
+        let balance = 100;
+        let total = 0;
+        alert("Balance: $"+balance);
+        function cola(){
+            if(balance>=5.5){
+                balance-=5.5;
+                total+=5.5;
+            }
+            else{
+                alert("You don't have enough money.");
+            }
+        }
+        function milk(){
+            if(balance>=7){
+                balance-=7;
+                total+=7;
+            }
+            else{
+                alert("You don't have enough money.");
+            }
+        }
+        function gummy(){
+            if(balance>=9.5){
+                balance-=9.5;
+                total+=9.5;
+            }
+            else{
+                alert("You don't have enough money.");
+            }
+        }
+        function lollipop(){
+            if(balance>=3){
+                balance-=3;
+                total+=3;
+            }
+            else{
+                alert("You don't have enough money.");
+            }
+        }
+        function pay(){
+            alert("Balance: $"+balance);
+            alert("Total: $"+total);
+        }
+    </script>
+</head>
+<body>
+    <h1>SnackShop124</h1>
+    <hr>
+    <section id="drinks">    
+        <h2>Drinks</h2>
+        <div id="cola">
+            <img src="https://f.vividscreen.info/soft/2412ae5dccfbd08b936a9479665d7620/Coca-Cola-Cans-wide-i.jpg" alt="some cola">
+            <!--<p>CocaCola</p>-->
+            <button id="cola2" onclick="cola( )">Buy CocaCola</button>
+        </div>
+        <div id="milk">
+            <img src="https://f.vividscreen.info/soft/b96f3236d3d55b8ad086acb7ec8d9304/Strawberrie-In-Milk-wide-i.jpg" alt="strawberry milk">
+            <button id="milk2" onclick="milk()">Buy BerryMilk</button>
+        </div>
+    </section>
+    <hr>
+    <section id="candy">
+        <h2>Candy</h2>
+        <div id="gummybears">
+            <img src="https://f.vividscreen.info/soft/5f402844ec40b68bfeb1cd62d3d6c967/Gummy-Bears-wide-i.jpg" alt="gummy bears">
+            <button id="gummy" onclick="gummy()">Buy GummyBears</button>
+        </div>
+        <div id="lollipops">
+            <img src="https://f.vividscreen.info/soft/c3ee00ef9170b6faf622bb74a9eb7b67/Lollipop-wide-i.jpg" alt="lollipop">
+            <button id="lollipop" onclick="lollipop()">Buy Lollipop</button>
+        </div>
+    </section>
+    <button id="pay" onclick="pay()">Pay</button>
+</body>
+</html>
